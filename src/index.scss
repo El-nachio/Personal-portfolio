@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@mixin colum-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin Project-title {
+    text-align: center;
+    color: white;
+    font-family: koulen;
+}
+* {
+    box-sizing: border-box;
+}
+#root {
+    height: 100%;
+}
+#contain {
+    background-image: url(https://wallpaperaccess.com/full/3678503.png);
+    object-fit: fill;
+}
+h2 {
+    @include Project-title;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.presentation, .borde {
+    @include colum-center;
+    justify-content: center;
+    color: blue;
+    .borde {
+        position: absolute;
+        color: white;
+        p {
+            font-size: 49px;
+        }
+    } 
+    p {
+        font-size: 50px;
+        font-family: 'pattern';
+    }
+}
+footer {
+    color:rgb(41, 179, 41);
+    background-color: rgb(26, 26, 67);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'data name input'
+    'data submit submit';
+}
+#data {
+    grid-area: data;
+}
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 10pxs;
+    a {
+        width: 40%;
+        margin: 10px;
+        font-size: 25px;
+        color: green;
+        text-align: center;
+        transition: 0.5s;
+    }
+    a:hover {
+        transform: scale(1.1);
+        border-radius: 20px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 15px;
+        object-fit: contain;
+    }
+}
+#Name {
+    grid-area: name;
+    @include colum-center;
+    input {
+        height: 35%;
+        width: 80%;
+        border-radius: 25px;
+        margin-bottom: 5px;
+        outline: none;
+        text-align: center;
+    }
+}
+#input {
+    @include colum-center;
+    justify-content: center;
+    textarea {
+        grid-area: input;
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        outline: none;
+        text-align: center;
+    }
+}
+#submit {
+    grid-area: submit;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    border-radius: 50px;
+}
+span {
+    p {
+        font-family: 'koulen'
+    }
+}

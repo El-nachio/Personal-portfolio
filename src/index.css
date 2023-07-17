@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+#contain {
+  background-image: url(https://wallpaperaccess.com/full/3678503.png);
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: koulen;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.presentation, .borde {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: blue;
+}
+
+.presentation .borde, .borde .borde {
+  position: absolute;
+  color: white;
+}
+
+.presentation .borde p, .borde .borde p {
+  font-size: 49px;
+}
+
+.presentation p, .borde p {
+  font-size: 50px;
+  font-family: 'pattern';
+}
+
+footer {
+  color: #29b329;
+  background-color: #1a1a43;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'data name input' 'data submit submit';
+}
+
+#data {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: data;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 10pxs;
+}
+
+#projects a {
+  width: 40%;
+  margin: 10px;
+  font-size: 25px;
+  color: green;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#projects a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 20px;
+}
+
+#projects img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Name input {
+  height: 35%;
+  width: 80%;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  outline: none;
+  text-align: center;
+}
+
+#input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#input textarea {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: input;
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+}
+
+#submit {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: submit;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  border-radius: 50px;
+}
+
+span p {
+  font-family: 'koulen';
+}
+/*# sourceMappingURL=index.css.map */
